@@ -30,3 +30,9 @@ jobs:
         
       - name: Publish image
         run: docker push brammys/mongodump:5.0
+
+      - name: Tag latest image
+        run: docker tag brammys/mongodump:5.0 brammys/mongodump:latest
+        
+      - name: Publish latest image
+        run: docker push brammys/mongodump:latest
