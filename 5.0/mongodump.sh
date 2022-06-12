@@ -1,8 +1,8 @@
 #!/bin/ash
-echo "Starting mongodump task"
-
 TIME=`/bin/date +%d-%m-%Y_%H-%M`
 DEST="/backups"
+
+echo "Starting mongodump task - $TIME"
 
 # Dump from mongodb host into backup directory
 /usr/bin/mongodump --uri "${MONGO_URI:-"mongodb://mongo:27017"}" --gzip --archive=$DEST/$TIME
