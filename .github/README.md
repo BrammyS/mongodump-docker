@@ -12,7 +12,7 @@ Run the backup task at 05:00 on Sunday and delete the backups after 14 days.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`5.0` (5.0/Dockerfile)](https://github.com/BrammyS/mongodump-docker/blob/main/5.0/Dockerfile)
+* [`latest`, `5.0` (5.0/Dockerfile)](https://github.com/BrammyS/mongodump-docker/blob/main/5.0/Dockerfile)
 
 ## Configurations
 
