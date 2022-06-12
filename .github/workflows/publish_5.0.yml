@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '5.0/Dockerfile'
+      - '5.0/mongodump.sh'
 
 jobs:
   build:
