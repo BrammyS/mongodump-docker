@@ -8,8 +8,8 @@ DEST="/backups"
 /usr/bin/mongodump --uri "$MONGO_URI" --gzip --archive=$DEST/$TIME
 
 if [[ -z "${DELETE_AFTER}" ]]; then
-    echo "DELETE_AFTER was not set. Not deleting old backups."
+    echo "DELETE_AFTER was not set. Not deleting old backups"
 else
-    # Delete backups older then X amount of days
+    echo "Deleting backups older then $DELETE_AFTER days"
     find $DEST -type f -ctime +$DELETE_AFTER -exec rm -rf {} \;
 fi
