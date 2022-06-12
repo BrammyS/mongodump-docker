@@ -2,9 +2,9 @@ name: Build docker image 5.0
 
 on:
   push:
-    paths:
-      - '5.0/Dockerfile'
-      - '5.0/mongodump.sh'
+#     paths:
+#       - '5.0/Dockerfile'
+#       - '5.0/mongodump.sh'
 
 jobs:
   build:
