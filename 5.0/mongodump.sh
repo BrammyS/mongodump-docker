@@ -1,5 +1,5 @@
 #!/bin/ash
-echo "Starting mongodump"
+echo "Starting mongodump task"
 
 TIME=`/bin/date +%d-%m-%Y_%H-%M`
 DEST="/backups"
