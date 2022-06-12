@@ -2,7 +2,7 @@
 
 # Add the mongodump shells script to crontab
 touch crontab.tmp \
-    && echo "${CRON_SCHEDULE:-"* * * * *"} /bin/ash -c /mongodump.sh" > crontab.tmp \
+    && echo "${CRON_SCHEDULE:-"0 0 * * *"} /bin/ash -c /mongodump.sh" > crontab.tmp \
     && crontab crontab.tmp \
     && rm -rf crontab.tmp
 
