@@ -26,7 +26,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           
       - name: Build image
-        run: docker build -t mongodump:5.0 .
+        run: docker build -t mongodump:5.0 -f .\5.0\Dockerfile .
         
       - name: Publish image
         run: docker push brammys/mongodump:5.0
