@@ -20,7 +20,7 @@ Run the backup task at 05:00 on Sunday and delete the backups after 14 days.
 |-----------------	|-------------------------	|----------------------------------------------------------------------------------------	|
 | `MONGO_URI`     	| `mongodb://mongo:27017` 	| The Mongodb URI                                                                        	|
 | `CRON_SCHEDULE` 	| `0 0 * * *`             	| The cron schedule expression.                                                          	|
-| `DELETE_AFTER`  	| ``                      	| The amount of days after the backups will be deleted. Leave empty to keep all backups. 	|
+| `DELETE_AFTER`  	| ` `                      	| The amount of days after the backups will be deleted. Leave empty to keep all backups. 	|
 
 ## Volumes
 
