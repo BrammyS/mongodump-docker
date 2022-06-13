@@ -1,6 +1,6 @@
 # mongodump-docker
 
-A docker image with a mongodump cronjob.
+Backup your Mongodb database with cron inside of a docker container!
 
 ## Examples
 
