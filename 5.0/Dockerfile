@@ -5,10 +5,10 @@ LABEL maintainer "BrammyS <https://github.com/BrammyS>"
 RUN apk add --no-cache mongodb-tools=4.2.14-r7
 
 # Add shell scripts.
-ADD ./5.0/mongodump.sh /mongodump.sh
+COPY ./5.0/mongodump.sh /mongodump.sh
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /mongodump.sh & chmod +x /entrypoint.sh
 
 VOLUME /backups
 
-CMD ["./entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
