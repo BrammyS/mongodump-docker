@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 TIME=`/bin/date +%d-%m-%Y_%H-%M`
 DEST="/backups"
 
