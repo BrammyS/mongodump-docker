@@ -5,7 +5,7 @@ on:
     paths:
       - '5.0/Dockerfile'
       - '5.0/mongodump.sh'
-
+      - 'entrypoint.sh'
 jobs:
   build:
     runs-on: ${{ matrix.os }}
