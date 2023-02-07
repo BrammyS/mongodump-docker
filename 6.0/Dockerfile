@@ -1,5 +1,12 @@
 FROM ubuntu:22.04
-LABEL maintainer "BrammyS <https://github.com/BrammyS>"
+
+LABEL maintainer="BrammyS <https://github.com/BrammyS>"
+LABEL org.label-schema.name="brammys/mongodump"
+LABEL org.label-schema.description="Backup your Mongodb database with cron inside of a docker container!"
+LABEL org.label-schema.vendor="BrammyS"
+LABEL org.label-schema.url="https://github.com/BrammyS/mongodump-docker"
+LABEL org.label-schema.docker.cmd=" docker run -v ./localBackupsDir:/backups -e \"MONGO_URI=mongodb+srv://username:password@mongodb-cluster.mongodb.net\" -e DELETE_AFTER=14 -e \"CRON_SCHEDULE=0 5 * * sun\" --name mongodump brammys/mongodump"
+
 VOLUME /backups
 
 # Update local pacakges.
